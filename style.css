@@ -1,0 +1,29 @@
+#block1 {
+    background-color: #6088ca; 
+    padding: 30px; 
+    margin-bottom: 5px;
+    border: 1px dotted grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#block2 {
+    background-color: #528b78; 
+    padding: 30px;
+    border: 1px dotted grey;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+
+#addressText {
+    font-family: Arial, Helvetica, sans-serif;
+    word-break: break-all;
+}
+
+#qrcodetext {
+    font-family: Arial, Helvetica, sans-serif;
+    word-break: break-all;
+}
+
+#qrcode {
+    margin-top: 10px;
+}

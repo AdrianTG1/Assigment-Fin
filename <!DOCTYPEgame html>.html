@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HANGMAN GAME</title>
+    <meta charset="UTF-8" />
+    <link href="sty1.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h1>Hangman</h1>
+      <p>
+        Use the alphabet below to guess the word, or click hint to get a clue
+      </p>
+    </div>
+
+    <div class="wrapper">
+      <div class="alphabetButton" id="alphabetButtons"></div>
+      <p id="categoryName"></p>
+      <div id="hold"></div>
+      <p id="mylives"></p>
+      <p id="clue">Clue -</p>
+      <canvas id="stickman"
+        >This Text will show if the Browser does NOT support HTML5 Canvas
+        tag</canvas
+      >
+      <div class="container">
+        <button class="btn-2" id="hint">Hint</button>
+        <button class="btn-2" id="reset">Play again</button>
+      </div>
+    </div>
+    <h3>Score</h3>
+    <input id="name" type= "text" placeholder = "your name">
+    <input id="score" type= "text" placeholder = "your score">
+    <input type="button" value="save">
+    <h4>Source</h4>
+    <h5>https://codesandbox.io/s/z9fhk?file=/index.html</h5>
+    <script src="game.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
+        import { getDatabase } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-database.js";
+        import { getAuth } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDAklNpLC3X24XZYLhEw-b-mxrIQugM9sM",
+          authDomain: "heng-meg.firebaseapp.com",
+          databaseURL: "https://heng-meg-default-rtdb.firebaseio.com",
+          projectId: "heng-meg",
+          storageBucket: "heng-meg.appspot.com",
+          messagingSenderId: "550259220100",
+          appId: "1:550259220100:web:1b007455155a6178e06cd1",
+          measurementId: "G-KEH5L824KW"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        const auth = getAuth();
+        function save(){
+            var newScore;
+            newScore.name = document.getElementByID("name").value;
+            newScore.score = document.getElementById("score").value;
+            databaseURL.set(newScore);
+
+        }
+
+      </script>
+
+
+
+  </body>
+</html>
+

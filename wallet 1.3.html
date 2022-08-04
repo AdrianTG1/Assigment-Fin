@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <div id="block">
+        <h1>Wallet</h1>
+        <link rel="stylesheet" href="wallet.css"/>
+</div>
+    <script 
+        type="text/javascript" 
+        src="https://unpkg.com/bsv@1.5.3/bsv.min.js">
+    </script>
+    <script
+    type="text/javascript"
+    src="https://unpkg.com/bsv@1.5.3/bsv-mnemonic.min.js">
+</script>
+
+    <script 
+        type="text/javascript" 
+        src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js">
+    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+  </head>
+  <body>
+    <div id="block1">
+        <h1>Mnemonic:</h1> 
+        <p id="phrase"> </p>
+   </div>
+
+    <div id="block3">
+        <h1>Your Address is:</h1> 
+        <p id="addressText"> </p>
+    </div>
+    <div id="block4">
+           <h1>Your QR code:</h1>
+           <p id="qrcode"></p>
+      </div>
+    <div id="block5">
+        <h1>Balance:</h1>
+        <p id="balance"></p>
+    </div>
+    <script> 
+    var address = "1G23Myz37kvKEJTzDbTDYof7e2CtbF2Bj2"
+    
+    var y = document.querySelector("#addressText");
+    y.innerHTML = address;
+    
+    var addressCode = 'bitcoinsv:' + address;
+    
+    new QRCode(document.getElementById("qrcode"), addressCode);
+    
+    var config = {
+    method: 'get',
+    url: "https://api.whatsonchain.com/v1/bsv/main/address/" +
+    address + "/balance",
+  };
+  
+    axios(config)
+    .then((response) => {
+      let data = JSON.stringify(response.data);
+      let p = document.getElementById("balance");
+      p.innerHTML = data;
+    })
+
+    var bsvMnemonic = window.bsvMnemonic;
+    var words = bsvMnemonic.fromRandom();
+    
+    var hdPrivateKey = bsv.HDPrivateKey.fromSeed(words.toSeed())
+    var privateKey = hdPrivateKey.deriveChild("m/44'/0'/0'").privateKey;
+    var address = bsv.Address.fromPrivateKey(privateKey).toString();
+    
+    var p = document.querySelector("#phrase");
+    p.innerHTML = words.toString();
+    
+    var p = document.querySelector("#privText");
+    p.innerHTML = privateKey.toString();
+
+    var y = document.querySelector("#addressText");
+    y.innerHTML = address;
+
+    </script>
+  </body>
+</html>

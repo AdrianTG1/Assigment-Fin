@@ -1,0 +1,63 @@
+#block {
+    width: 225px;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 10px;
+    background-color: #e7e7da; 
+    padding: 20px; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#block1 {
+    width: 300px;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 10px;
+    background-color: #6088ca; 
+    padding: 30px; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#block2 {
+    width: 300px;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 10px;
+    background-color: #c3ca60; 
+    padding: 30px; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#block3 {
+    width: 300px;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 10px;
+    background-color: #60caaf; 
+    padding: 30px; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#block4 {
+    width: 300px;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 10px;
+    background-color: #7c60ca; 
+    padding: 30px; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-image: url("https://nebigdatahub.org/wp-content/uploads/2019/11/7T9364v.gif");
+}

@@ -1,0 +1,93 @@
+#block {
+    width: 225px;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 10px;
+    background-color: #e7e7da; 
+    padding: 20px; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#block1 {
+    width: 300px;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 10px;
+    background-color: #6088ca; 
+    padding: 30px; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#block2 {
+    width: 300px;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 10px;
+    background-color: #42745c; 
+    padding: 30px; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#block3 {
+    width: 300px;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 10px;
+    background-color: #104191; 
+    padding: 30px; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#block4 {
+    width: 300px;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 10px;
+    background-color: #93ac25; 
+    padding: 30px; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#block5 {
+    width: 300px;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 10px;
+    background-color: #25acac; 
+    padding: 30px; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#privText {
+    font-family: Arial, Helvetica, sans-serif;
+    word-break: break-all;
+}
+
+#addressText {
+    font-family: Arial, Helvetica, sans-serif;
+    word-break: break-all;
+}
+
+#qrcode {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+body {
+    background-image: url("https://thumbs.gfycat.com/SingleDownrightGemsbok-size_restricted.gif");
+}
